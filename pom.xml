@@ -6,7 +6,11 @@
 
     <groupId>com.zheng.nie</groupId>
     <artifactId>dubbo</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>dubbo-spi</module>
+    </modules>
 
 
 </project>
