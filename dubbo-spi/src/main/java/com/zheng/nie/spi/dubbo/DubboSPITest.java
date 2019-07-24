@@ -1,5 +1,6 @@
 package com.zheng.nie.spi.dubbo;
 
+import com.alibaba.dubbo.common.extension.ExtensionLoader;
 import com.zheng.nie.spi.java.Robot;
 import org.junit.Test;
 
@@ -10,14 +11,14 @@ import org.junit.Test;
 public class DubboSPITest {
 
 
-//    @Test
-//    public void sayHello() throws Exception {
-//        ExtensionLoader<Robot> extensionLoader =
-//                ExtensionLoader.getExtensionLoader(Robot.class);
-//        Robot optimusPrime = extensionLoader.getExtension("optimusPrime");
-//        optimusPrime.sayHello();
-//        Robot bumblebee = extensionLoader.getExtension("bumblebee");
-//        bumblebee.sayHello();
-//    }
+    @Test
+    public void sayHello() throws Exception {
+        ExtensionLoader<Robot> extensionLoader =
+                ExtensionLoader.getExtensionLoader(Robot.class);
+        Robot optimusPrime = extensionLoader.getExtension("optimusPrime");
+        optimusPrime.sayHello();
+        Robot bumblebee = extensionLoader.getExtension("bumblebee");
+        bumblebee.sayHello();
+    }
 
 }
